@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Solution</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+  </head>
+
+  <body>
+
+
+    <header>
+      <h1>Write a program in any language to find the sum of the series 1
+        +11 + 111 + 1111 + ... n terms.</h1>
+    </header>
+    <p>To find (calculate) the sum of series 1+11+111+1111+... till N terms using C program</p>
+    <p>- we are reading total number of terms by the user and using following steps:</p>
+    <ul style="font-size:20px;">
+      <li>1.Declared variables to stores sum of the values (sum), loop counter (i) and a variable to store term (temp) value (like, 1, 11, 111,.. )</li>
+       <li>2.Assigning 0 to the variable sum and initial value 1 to the temp</li>
+       <li>3.Within the loop - first we are adding the temp value to the sum and them increasing the value of temp to make it next term value.</li>
+       <li>4.And, after the loop – we are printing the value of the sum.</li>
+
+    </ul>
+
+    <section style="font-size: medium; background-color: bisque;"><h3>
+      Code
+    </h3>
+    
+              <pre><code class="language-pascal">
+                #include < stdio.h >
+
+                  void main()
+  
+                  {
+                    int n,i; 
+                    long sum=0;
+                    long int t=1;
+                    printf("Input the number of terms : ");
+                    scanf("%d",&n);
+                    for(i=1;i <= n;i++)
+                    {
+                       printf("%ld  ",t);
+                        if (i < n)
+                        {
+                            printf(" + "); 
+                            
+                        }
+                       sum=sum+t;
+                       t=(t*10)+1;
+                    }
+                    printf("\n The Sum is : %ld\n", sum);
+                  }
+                end.
+                </code>
+              </pre>
+            <hr>
+    </section>
+
+  <section>
+  <h3>INPUT</h3><br>
+<p>suppose the input <var>n</var> is 5</p>
+Input the number of terms : 5 
+<p>Press<kbd>ctrl + s</kbd> to save your current document. </p> <br>
+
+</section>
+<hr>
+<section>
+  <h3>
+    OUTPUT
+  </h3><br>
+Input the number of terms : 5 <br>                                                                               
+1 + 11 + 111 + 1111 + 11111 <br>                                                                                 
+The Sum is : 12345
+</section><hr>
+<br>
+
+<nav class="Program">
+  <h3>More Algorithms</h3>
+  <ol>
+      <li class="codeclass"><a href="code">code</a></li>
+      <li class="crumb"><a href="bikes/bmx">More Algo</a></li>
+      
+  </ol>
+</nav>
+<br>
+<hr>
+<h3>Algorithm Link:</h3><br>
+<a href="https://www.includehelp.com/c-programs/calculate-sum-of-the-series-1-11-111-1111-n-terms.aspx">Click here</a>
+<br>
+<hr>
+
+    <footer>
+      <p></p>
+    </footer>
+
+  </body>
+</html>
